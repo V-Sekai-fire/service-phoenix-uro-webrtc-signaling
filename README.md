@@ -1,18 +1,21 @@
-# Uro
+# service-phoenix-uro-webrtc-signaling
 
-To start your Phoenix server:
+An Elixir web service that relays WebRTC offers, answers and candidates between the peers in a lobby.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## What it is for
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+A client joins or creates a lobby over a websocket channel, learns its own peer id and when other
+peers arrive or leave, and exchanges session offers, answers and candidates with them through the
+server until the lobby's creator seals it. The lobby channel's module documentation states the
+protocol.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Build and run
 
-## Learn more
+```sh
+mix setup
+mix phx.server
+```
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+## Licence
+
+This repository does not state a licence.
