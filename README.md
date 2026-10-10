@@ -18,4 +18,4 @@ mix phx.server
 
 ## Licence
 
-This repository does not state a licence.
+MIT. See [LICENSE](LICENSE).
